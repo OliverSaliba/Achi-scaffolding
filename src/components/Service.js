@@ -35,11 +35,10 @@ function GridItems({ index , t }) {
         className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
         id="PonteggiTradizionale"
       >
-        <div className="relative group rounded-[11.6px] hover:bg-gray-900">
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
           <ImageWebp
             srcWebp='/assets/361641065_768035905323121_6701313797518833287_n2_lossyalpha.webp'
-            id="switchImageAnim"
-            className="object-cover w-full h-[50%] group-hover:opacity-50 rounded-[17px]"
+            className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
             src="/assets/361641065_768035905323121_6701313797518833287_n2_lossyalpha.webp"
             alt="serviceIcon"
           />
@@ -80,7 +79,7 @@ function GridItems({ index , t }) {
         className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
         id="ponteggiMultidirezionale"
       >
-        <div className="relative hover:bg-gray-900 group rounded-[17px]">
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
           <ImageWebp
             srcWebp='/assets/Suspendedscaffolding12_lossyalpha.webp'
             className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
@@ -124,7 +123,7 @@ function GridItems({ index , t }) {
         className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
         id="ponteggiSospesi"
       >
-        <div className="relative hover:bg-gray-900 group rounded-[17px]">
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
           <ImageWebp
             srcWebp='/assets/SDC14429_lossyalpha.webp'
             className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
@@ -168,7 +167,7 @@ function GridItems({ index , t }) {
         className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
         id="pontegggiInternee"
       >
-        <div className="relative hover:bg-gray-900 group rounded-[17px]">
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
           <ImageWebp
             srcWebp='/assets/HomeBanner42_lossyalpha.webp'
             className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
@@ -212,7 +211,7 @@ function GridItems({ index , t }) {
         className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
         id="StruturraPortata"
       >
-        <div className="relative hover:bg-gray-900 group rounded-[17px]">
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
           <ImageWebp
             srcWebp='/assets/HomeBanner12_lossyalpha.webp'
             className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
@@ -256,7 +255,7 @@ function GridItems({ index , t }) {
         className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
         id="puntellamenti"
       >
-        <div className="relative hover:bg-gray-900 group rounded-[17px]">
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
           <ImageWebp
             srcWebp='/assets/20819369_135108873765021_8187137705964148355_o(1)2_lossyalpha.webp'
             className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
@@ -297,10 +296,10 @@ function GridItems({ index , t }) {
         </h3>
       </div>
       <div
-        className="flex group/parent mb-[24px] lg:mb-[50px] justify-center items-start md:mb-[0px] flex-col 2xl:mb-[50px] xl:mb-[50px]"
+        className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
         id="socialMarketing"
       >
-        <div className="relative hover:bg-gray-900 group rounded-[17px]">
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
           <ImageWebp
             srcWebp='/assets/Scaffoldingdesign2_lossyalpha.webp'
             className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
@@ -338,6 +337,402 @@ function GridItems({ index , t }) {
         </div>
         <h3 className="text-[20px] font-saira font-[700] lg:leading-[42.18px] text-[#28509E] group-hover/parent:text-[#ff8e26] transition-colors duration-300 mt-[16px] mb-[24px] lg:mt-[24px] lg:mb-[24px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[20px] capitalize">
           {t('service.seventhService')}
+        </h3>
+      </div>
+      <div
+        className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
+        id="specializedLaborforce"
+      >
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
+          <ImageWebp
+            srcWebp='/assets/services/361641065_768035905323121_6701313797518833287_n 2(2).png'
+            className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
+            src="/assets/services/361641065_768035905323121_6701313797518833287_n 2(2).png"
+            alt="serviceIcon"
+          />
+          <div className="block w-full h-fit">
+            <div className="absolute top-0 bottom-0 w-full h-full overflow-hidden p-2 flex items-center">
+              <div className="w-full">
+                <div
+                  className="transition-all transform 
+                    translate-y-8 opacity-0 
+                    group-hover:opacity-100 
+                    group-hover:translate-y-0"
+                >
+                  <div className="p-2 flex justify-center items-center">
+                    <a
+                      href="https://wa.me/+96103322811"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex rtl:flex-row-reverse justify-center items-center text-[12px] 2xl:text-[15px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] text-white font-saira font-[600] leading-[29px] py-[10px] px-[30px] bg-[#28509E] rounded-[12px] uppercase hover:bg-[#25D366] border-[#FFF] hover:border-[#25D366] border-solid border-2 transition duration-500"
+                    >
+                      <img
+                        src="/assets/Whatsapp.svg"
+                        className="w-[24px] mr-[10px]"
+                        alt="whatsappIcon"
+                      />
+                      {t('service.contactBtn')}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 className="text-[20px] font-saira font-[700] lg:leading-[42.18px] text-[#28509E] group-hover/parent:text-[#ff8e26] transition-colors duration-300 mt-[16px] mb-[24px] lg:mt-[24px] lg:mb-[24px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[20px] capitalize">
+          {t('service.eighthService')}
+        </h3>
+      </div>
+      <div
+        className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
+        id="highRiseScaffolding"
+      >
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
+          <ImageWebp
+            srcWebp='/assets/services/SDC14429(1).png'
+            className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
+            src="/assets/services/SDC14429(1).png"
+            alt="serviceIcon"
+          />
+          <div className="block w-full h-fit">
+            <div className="absolute top-0 bottom-0 w-full h-full overflow-hidden p-2 flex items-center">
+              <div className="w-full">
+                <div
+                  className="transition-all transform 
+                    translate-y-8 opacity-0 
+                    group-hover:opacity-100 
+                    group-hover:translate-y-0"
+                >
+                  <div className="p-2 flex justify-center items-center">
+                    <a
+                      href="https://wa.me/+96103322811"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex rtl:flex-row-reverse justify-center items-center text-[12px] 2xl:text-[15px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] text-white font-saira font-[600] leading-[29px] py-[10px] px-[30px] bg-[#28509E] rounded-[12px] uppercase hover:bg-[#25D366] border-[#FFF] hover:border-[#25D366] border-solid border-2 transition duration-500"
+                    >
+                      <img
+                        src="/assets/Whatsapp.svg"
+                        className="w-[24px] mr-[10px]"
+                        alt="whatsappIcon"
+                      />
+                      {t('service.contactBtn')}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 className="text-[20px] font-saira font-[700] lg:leading-[42.18px] text-[#28509E] group-hover/parent:text-[#ff8e26] transition-colors duration-300 mt-[16px] mb-[24px] lg:mt-[24px] lg:mb-[24px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[20px] capitalize">
+          {t('service.ninthService')}
+        </h3>
+      </div>
+      <div
+        className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
+        id="circularDomeScaffolding"
+      >
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
+          <ImageWebp
+            srcWebp='/assets/services/SDC14429(1).png'
+            className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
+            src="/assets/services/SDC14429(1).png"
+            alt="serviceIcon"
+          />
+          <div className="block w-full h-fit">
+            <div className="absolute top-0 bottom-0 w-full h-full overflow-hidden p-2 flex items-center">
+              <div className="w-full">
+                <div
+                  className="transition-all transform 
+                    translate-y-8 opacity-0 
+                    group-hover:opacity-100 
+                    group-hover:translate-y-0"
+                >
+                  <div className="p-2 flex justify-center items-center">
+                    <a
+                      href="https://wa.me/+96103322811"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex rtl:flex-row-reverse justify-center items-center text-[12px] 2xl:text-[15px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] text-white font-saira font-[600] leading-[29px] py-[10px] px-[30px] bg-[#28509E] rounded-[12px] uppercase hover:bg-[#25D366] border-[#FFF] hover:border-[#25D366] border-solid border-2 transition duration-500"
+                    >
+                      <img
+                        src="/assets/Whatsapp.svg"
+                        className="w-[24px] mr-[10px]"
+                        alt="whatsappIcon"
+                      />
+                      {t('service.contactBtn')}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 className="text-[20px] font-saira font-[700] lg:leading-[42.18px] text-[#28509E] group-hover/parent:text-[#ff8e26] transition-colors duration-300 mt-[16px] mb-[24px] lg:mt-[24px] lg:mb-[24px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[20px] capitalize">
+          {t('service.tenthService')}
+        </h3>
+      </div>
+      <div
+        className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
+        id="scaffoldingForEvents"
+      >
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
+          <ImageWebp
+            srcWebp='/assets/services/Home Banner 4 2(1).png'
+            className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
+            src="/assets/services/Home Banner 4 2(1).png"
+            alt="serviceIcon"
+          />
+          <div className="block w-full h-fit">
+            <div className="absolute top-0 bottom-0 w-full h-full overflow-hidden p-2 flex items-center">
+              <div className="w-full">
+                <div
+                  className="transition-all transform 
+                    translate-y-8 opacity-0 
+                    group-hover:opacity-100 
+                    group-hover:translate-y-0"
+                >
+                  <div className="p-2 flex justify-center items-center">
+                    <a
+                      href="https://wa.me/+96103322811"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex rtl:flex-row-reverse justify-center items-center text-[12px] 2xl:text-[15px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] text-white font-saira font-[600] leading-[29px] py-[10px] px-[30px] bg-[#28509E] rounded-[12px] uppercase hover:bg-[#25D366] border-[#FFF] hover:border-[#25D366] border-solid border-2 transition duration-500"
+                    >
+                      <img
+                        src="/assets/Whatsapp.svg"
+                        className="w-[24px] mr-[10px]"
+                        alt="whatsappIcon"
+                      />
+                      {t('service.contactBtn')}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 className="text-[20px] font-saira font-[700] lg:leading-[42.18px] text-[#28509E] group-hover/parent:text-[#ff8e26] transition-colors duration-300 mt-[16px] mb-[24px] lg:mt-[24px] lg:mb-[24px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[20px] capitalize">
+          {t('service.eleventhService')}
+        </h3>
+      </div>
+      <div
+        className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
+        id="industrialScaffolding"
+      >
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
+          <ImageWebp
+            srcWebp='/assets/services/Home Banner 4 2(1).png'
+            className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
+            src="/assets/services/Home Banner 4 2(1).png"
+            alt="serviceIcon"
+          />
+          <div className="block w-full h-fit">
+            <div className="absolute top-0 bottom-0 w-full h-full overflow-hidden p-2 flex items-center">
+              <div className="w-full">
+                <div
+                  className="transition-all transform 
+                    translate-y-8 opacity-0 
+                    group-hover:opacity-100 
+                    group-hover:translate-y-0"
+                >
+                  <div className="p-2 flex justify-center items-center">
+                    <a
+                      href="https://wa.me/+96103322811"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex rtl:flex-row-reverse justify-center items-center text-[12px] 2xl:text-[15px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] text-white font-saira font-[600] leading-[29px] py-[10px] px-[30px] bg-[#28509E] rounded-[12px] uppercase hover:bg-[#25D366] border-[#FFF] hover:border-[#25D366] border-solid border-2 transition duration-500"
+                    >
+                      <img
+                        src="/assets/Whatsapp.svg"
+                        className="w-[24px] mr-[10px]"
+                        alt="whatsappIcon"
+                      />
+                      {t('service.contactBtn')}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 className="text-[20px] font-saira font-[700] lg:leading-[42.18px] text-[#28509E] group-hover/parent:text-[#ff8e26] transition-colors duration-300 mt-[16px] mb-[24px] lg:mt-[24px] lg:mb-[24px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[20px] capitalize">
+          {t('service.twelfthService')}
+        </h3>
+      </div>
+      <div
+        className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
+        id="roofScaffolding"
+      >
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
+          <ImageWebp
+            srcWebp='/assets/services/Home Banner 4 2(1).png'
+            className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
+            src="/assets/services/Home Banner 4 2(1).png"
+            alt="serviceIcon"
+          />
+          <div className="block w-full h-fit">
+            <div className="absolute top-0 bottom-0 w-full h-full overflow-hidden p-2 flex items-center">
+              <div className="w-full">
+                <div
+                  className="transition-all transform 
+                    translate-y-8 opacity-0 
+                    group-hover:opacity-100 
+                    group-hover:translate-y-0"
+                >
+                  <div className="p-2 flex justify-center items-center">
+                    <a
+                      href="https://wa.me/+96103322811"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex rtl:flex-row-reverse justify-center items-center text-[12px] 2xl:text-[15px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] text-white font-saira font-[600] leading-[29px] py-[10px] px-[30px] bg-[#28509E] rounded-[12px] uppercase hover:bg-[#25D366] border-[#FFF] hover:border-[#25D366] border-solid border-2 transition duration-500"
+                    >
+                      <img
+                        src="/assets/Whatsapp.svg"
+                        className="w-[24px] mr-[10px]"
+                        alt="whatsappIcon"
+                      />
+                      {t('service.contactBtn')}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 className="text-[20px] font-saira font-[700] lg:leading-[42.18px] text-[#28509E] group-hover/parent:text-[#ff8e26] transition-colors duration-300 mt-[16px] mb-[24px] lg:mt-[24px] lg:mb-[24px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[20px] capitalize">
+          {t('service.thirteenthService')}
+        </h3>
+      </div>
+      <div
+        className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
+        id="mobileSuspendedScaffolding"
+      >
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
+          <ImageWebp
+            srcWebp='/assets/services/Suspended scaffolding 1 2(1).png'
+            className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
+            src="/assets/services/Suspended scaffolding 1 2(1).png"
+            alt="serviceIcon"
+          />
+          <div className="block w-full h-fit">
+            <div className="absolute top-0 bottom-0 w-full h-full overflow-hidden p-2 flex items-center">
+              <div className="w-full">
+                <div
+                  className="transition-all transform 
+                    translate-y-8 opacity-0 
+                    group-hover:opacity-100 
+                    group-hover:translate-y-0"
+                >
+                  <div className="p-2 flex justify-center items-center">
+                    <a
+                      href="https://wa.me/+96103322811"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex rtl:flex-row-reverse justify-center items-center text-[12px] 2xl:text-[15px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] text-white font-saira font-[600] leading-[29px] py-[10px] px-[30px] bg-[#28509E] rounded-[12px] uppercase hover:bg-[#25D366] border-[#FFF] hover:border-[#25D366] border-solid border-2 transition duration-500"
+                    >
+                      <img
+                        src="/assets/Whatsapp.svg"
+                        className="w-[24px] mr-[10px]"
+                        alt="whatsappIcon"
+                      />
+                      {t('service.contactBtn')}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 className="text-[20px] font-saira font-[700] lg:leading-[42.18px] text-[#28509E] group-hover/parent:text-[#ff8e26] transition-colors duration-300 mt-[16px] mb-[24px] lg:mt-[24px] lg:mb-[24px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[20px] capitalize">
+          {t('service.fourteenthService')}
+        </h3>
+      </div>
+      <div
+        className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
+        id="scaffoldingAccessStairs"
+      >
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
+          <ImageWebp
+            srcWebp='/assets/services/SDC14429(1).png'
+            className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
+            src="/assets/services/SDC14429(1).png"
+            alt="serviceIcon"
+          />
+          <div className="block w-full h-fit">
+            <div className="absolute top-0 bottom-0 w-full h-full overflow-hidden p-2 flex items-center">
+              <div className="w-full">
+                <div
+                  className="transition-all transform 
+                    translate-y-8 opacity-0 
+                    group-hover:opacity-100 
+                    group-hover:translate-y-0"
+                >
+                  <div className="p-2 flex justify-center items-center">
+                    <a
+                      href="https://wa.me/+96103322811"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex rtl:flex-row-reverse justify-center items-center text-[12px] 2xl:text-[15px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] text-white font-saira font-[600] leading-[29px] py-[10px] px-[30px] bg-[#28509E] rounded-[12px] uppercase hover:bg-[#25D366] border-[#FFF] hover:border-[#25D366] border-solid border-2 transition duration-500"
+                    >
+                      <img
+                        src="/assets/Whatsapp.svg"
+                        className="w-[24px] mr-[10px]"
+                        alt="whatsappIcon"
+                      />
+                      {t('service.contactBtn')}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 className="text-[20px] font-saira font-[700] lg:leading-[42.18px] text-[#28509E] group-hover/parent:text-[#ff8e26] transition-colors duration-300 mt-[16px] mb-[24px] lg:mt-[24px] lg:mb-[24px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[20px] capitalize">
+          {t('service.fifteenthService')}
+        </h3>
+      </div>
+      <div
+        className="flex group/parent justify-center items-start flex-col mb-[24px] lg:mb-[50px]"
+        id="unloadingLoadingPlatforms"
+      >
+        <div className="relative hover:bg-gray-900 group rounded-[17px] w-full aspect-[4/3] overflow-hidden">
+          <ImageWebp
+            srcWebp='/assets/services/SDC14429(1).png'
+            className="object-cover w-full h-full group-hover:opacity-50 rounded-[17px]"
+            src="/assets/services/SDC14429(1).png"
+            alt="serviceIcon"
+          />
+          <div className="block w-full h-fit">
+            <div className="absolute top-0 bottom-0 w-full h-full overflow-hidden p-2 flex items-center">
+              <div className="w-full">
+                <div
+                  className="transition-all transform 
+                    translate-y-8 opacity-0 
+                    group-hover:opacity-100 
+                    group-hover:translate-y-0"
+                >
+                  <div className="p-2 flex justify-center items-center">
+                    <a
+                      href="https://wa.me/+96103322811"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex rtl:flex-row-reverse justify-center items-center text-[12px] 2xl:text-[15px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] text-white font-saira font-[600] leading-[29px] py-[10px] px-[30px] bg-[#28509E] rounded-[12px] uppercase hover:bg-[#25D366] border-[#FFF] hover:border-[#25D366] border-solid border-2 transition duration-500"
+                    >
+                      <img
+                        src="/assets/Whatsapp.svg"
+                        className="w-[24px] mr-[10px]"
+                        alt="whatsappIcon"
+                      />
+                      {t('service.contactBtn')}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 className="text-[20px] font-saira font-[700] lg:leading-[42.18px] text-[#28509E] group-hover/parent:text-[#ff8e26] transition-colors duration-300 mt-[16px] mb-[24px] lg:mt-[24px] lg:mb-[24px] xl:text-[24px] lg:text-[24px] md:text-[22px] sm:text-[20px] capitalize">
+          {t('service.sixteenthService')}
         </h3>
       </div>
       {/* <div

@@ -201,6 +201,7 @@ const Gallery = () => {
       "/assets/gallery/WhatsApp Image 2023-01-05 at 9.28.18 AM (5) (1).jpeg",
       "/assets/gallery/WhatsApp Image 2023-01-05 at 9.28.21 AM.jpeg",
       "/assets/gallery/WhatsApp Image 2023-01-05 at 9.28.22 AM.jpeg",
+      
     ],
     []
   );
