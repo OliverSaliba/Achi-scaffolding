@@ -142,12 +142,12 @@ const Products = () => {
             {products.map((p, idx) => (
               <article
                 key={`${p.title}-${idx}`}
-                className="bg-white rounded-[16px] overflow-hidden shadow-[0_12px_35px_rgba(0,0,0,0.10)]"
+                className="group bg-white rounded-[16px] overflow-hidden shadow-[0_12px_35px_rgba(0,0,0,0.10)] relative"
               >
                 {p.type === "3d" ? (
-                  <div className="relative bg-[#eef3fb]">
+                  <div className="relative bg-[#eef3fb] flex items-center justify-center h-[340px] overflow-hidden">
                     <model-viewer
-                      class="w-full h-[260px]"
+                      class="w-full h-full"
                       src={p.model}
                       alt={p.title}
                       camera-controls
@@ -156,57 +156,73 @@ const Products = () => {
                       interaction-prompt="none"
                       loading="eager"
                       ar-modes="webxr scene-viewer quick-look"
+                      camera-orbit="auto auto 105%"
+                      field-of-view="30deg"
+                      min-camera-orbit="auto auto 105%"
+                      max-camera-orbit="auto auto 105%"
                     />
-                    <span className="absolute top-[12px] left-[12px] bg-[#214f9b] text-white text-[12px] font-[900] px-[10px] py-[6px] rounded-full">
+                    <span className="absolute top-[12px] left-[12px] bg-[#214f9b] text-white text-[12px] font-[900] px-[10px] py-[6px] rounded-full z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-300">
                       {p.badge}
                     </span>
                   </div>
                 ) : (
-                  <div className="bg-[#eef3fb]">
+                  <div className="bg-[#eef3fb] relative flex items-center justify-center h-[340px] overflow-hidden">
                     <img
                       src={p.img}
                       alt={p.title}
-                      className="w-full h-[240px] object-cover"
+                      className="max-w-full max-h-full w-auto h-auto object-contain"
                       loading="lazy"
                     />
                   </div>
                 )}
 
-                <div className="p-[18px]">
-                  <h3 className="font-[900] text-[18px]">{p.title}</h3>
-                  <p className="mt-[8px] text-[14px] leading-[1.7] text-[#4a5c7a]">{p.desc}</p>
+                {/* Fixed title section - always visible */}
+                <div className="p-[20px] bg-white border-t border-[#eef3fb] relative z-10">
+                  <h3 className="font-[900] text-[18px] text-[#1b3155] leading-tight">{p.title}</h3>
+                </div>
 
-                  <ul className="mt-[12px] space-y-[6px] text-[13px] text-[#1b3155]">
-                    {p.specs.map((s) => (
-                      <li key={`${p.title}-${s}`} className="flex gap-[8px]">
-                        <span className="mt-[6px] w-[6px] h-[6px] rounded-full bg-[#214f9b]" />
-                        <span className="leading-[1.6]">{s}</span>
-                      </li>
-                    ))}
-                  </ul>
+                {/* Overlay that appears on hover - only covers image area */}
+                <div className="absolute top-0 left-0 right-0 h-[340px] bg-black/80 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col">
+                  <div className="p-[24px] w-full h-full flex flex-col justify-between text-white">
+                    <div>
+                      <h3 className="font-[900] text-[20px] mb-[16px] leading-tight">{p.title}</h3>
+                      <p className="text-[15px] leading-[1.7] mb-[20px] opacity-95">{p.desc}</p>
 
-                  {p.type === "3d" && (
-                    <div className="mt-[12px] flex flex-wrap gap-[8px]">
-                      {p.tags.map((tag) => (
-                        <span
-                          key={`${p.title}-${tag}`}
-                          className="text-[12px] px-[10px] py-[6px] rounded-full bg-[#eef3fb] text-[#214f9b] font-[900]"
-                        >
-                          {tag}
-                        </span>
-                      ))}
+                      <ul className="space-y-[12px] text-[14px]">
+                        {p.specs.map((s) => (
+                          <li key={`${p.title}-${s}`} className="flex gap-[12px] items-start">
+                            <span className="mt-[7px] w-[6px] h-[6px] rounded-full bg-white flex-shrink-0" />
+                            <span className="leading-[1.6] flex-1">{s}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                  )}
 
-                  {p.type === "img" && (
-                    <a
-                      href="#"
-                      onClick={(e) => e.preventDefault()}
-                      className="mt-[14px] inline-flex w-full justify-center rounded-[12px] px-[14px] py-[10px] border-2 border-[#214f9b] text-[#214f9b] font-[900] uppercase text-[13px] hover:bg-[#214f9b] hover:text-white transition"
-                    >
-                      Read More
-                    </a>
-                  )}
+                    <div className="mt-auto">
+                      {p.type === "3d" && (
+                        <div className="flex flex-wrap gap-[10px]">
+                          {p.tags.map((tag) => (
+                            <span
+                              key={`${p.title}-${tag}`}
+                              className="text-[13px] px-[12px] py-[8px] rounded-full bg-white/20 text-white font-[700] backdrop-blur-sm"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+
+                      {p.type === "img" && (
+                        <a
+                          href="#"
+                          onClick={(e) => e.preventDefault()}
+                          className="inline-flex w-full justify-center rounded-[12px] px-[16px] py-[12px] border-2 border-white text-white font-[700] uppercase text-[14px] hover:bg-white hover:text-[#214f9b] transition"
+                        >
+                          Read More
+                        </a>
+                      )}
+                    </div>
+                  </div>
                 </div>
               </article>
             ))}
